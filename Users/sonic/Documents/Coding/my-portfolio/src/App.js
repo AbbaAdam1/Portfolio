@@ -2,17 +2,18 @@ import './index.css';
 
 function App() {
 function update(e){
-  var x = e.clientX || e.touches[0].clientX;
-  var y = e.clientY || e.touches[0].clientY;
+  var x = e.clientX || (e.touches && e.touches[0].clientX);
+  var y = e.clientY || (e.touches && e.touches[0].clientY);
 
-  document.documentElement.style.setProperty('--cursorX', x + 'px')
-  document.documentElement.style.setProperty('--cursorY', y + 'px')
-  console.log(x)
-  console.log(y)
+  if (x !== undefined && y !== undefined) {
+    document.documentElement.style.setProperty('--cursorX', x + 'px');
+    document.documentElement.style.setProperty('--cursorY', y + 'px');
+  }
 }
 
-document.addEventListener('mousemove',update)
-document.addEventListener('touchmove',update)
+document.addEventListener('mousemove',update);
+document.addEventListener('touchmove',update);
+
   return (
     <div className="lg:flex md:p-16 lg:p-24">
       <div className="lg:fixed">
@@ -79,33 +80,33 @@ document.addEventListener('touchmove',update)
         <div className="float">
           <div className="flex items-center justify-between">
           <div>Full-Stack Developer</div>
-          <div className="text-sm text-gray-500">2022-2023</div>
+          <div className="text-sm text-slate-500">2022-2023</div>
           </div>
-          <div className="text-gray-500">Fannie Mae (Contracted by GenSpark)</div>
-          <p className="font-normal text-sm text-gray-700 py-5 dark:text-gray-400">Collaborated in an Agile environment to develop large-scale software for Fannie Mae. Leveraged Cloud Computing and AWS for efficient, secure Python development. Ensured high-quality data for decision-making. Delivered key milestones on time, adhering to project requirements in a Scrum setting.</p>
+          <div className="text-slate-500">Fannie Mae (Contracted by GenSpark)</div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">Collaborated in an Agile environment to develop large-scale software for Fannie Mae. Leveraged Cloud Computing and AWS for efficient, secure Python development. Ensured high-quality data for decision-making. Delivered key milestones on time, adhering to project requirements in a Scrum setting.</p>
         </div>
 
         <div className="float">
           <div className="flex items-center justify-between">
           <div>Full-Stack Developer</div>
-          <div className="text-sm text-gray-500">2021-2022</div>
+          <div className="text-sm text-slate-500">2021-2022</div>
           </div>
-          <div className="text-gray-500">GenSpark</div>
-          <p className="font-normal text-sm text-gray-700 py-5 dark:text-gray-400">Designed, developed, and deployed web apps using industry-standard practices. Demonstrated full-stack Java capability through team and individual projects. Utilized front-end dev with JavaScript and React. Built secure server-side apps with robust data handling.</p>
+          <div className="text-slate-500">GenSpark</div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">Designed, developed, and deployed web apps using industry-standard practices. Demonstrated full-stack Java capability through team and individual projects. Utilized front-end dev with JavaScript and React. Built secure server-side apps with robust data handling.</p>
         </div>
 
         <div className="float">
           <div className="flex items-center justify-between">
           <div>Web Application Developer Internship</div>
-          <div className="text-sm text-gray-500">2021</div>
+          <div className="text-sm text-slate-500">2021</div>
           </div>
-          <div className="text-gray-500">TDM Business Toole Suite</div>
-          <p className="font-normal text-sm text-gray-700 py-5 dark:text-gray-400">Collaborated with a team to develop the user interface of a web application with HTML, CSS, Java, and JavaScript. Created visually appealing interfaces that enhanced user engagement and facilitated seamless navigation.</p>
+          <div className="text-slate-500">TDM Business Toole Suite</div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">Collaborated with a team to develop the user interface of a web application with HTML, CSS, Java, and JavaScript. Created visually appealing interfaces that enhanced user engagement and facilitated seamless navigation.</p>
         </div>
 
         <div className="float">
           <p className="pb-10 text-xl">Technologies:</p>
-          <div className="text-gray-400">
+          <div className="text-slate-400">
 <div className="sm:grid grid-cols-2 gap-4">
   <ul className="list-disc pl-5">
     <li className="pb-2">JavaScript</li>
@@ -133,9 +134,9 @@ document.addEventListener('touchmove',update)
           <div className="text-xl pb-10">Education:</div>
           <div className="flex items-center justify-between">
           <div className="text-xl text-white">Bachelor of Arts in Computer Science</div>
-          <div className="text-sm text-gray-500">2017-2021</div>
+          <div className="text-sm text-slate-500">2017-2021</div>
           </div>
-          <div className="text-gray-500">Purdue School of Science, IUPUI</div>
+          <div className="text-slate-500">Purdue School of Science, IUPUI</div>
         </div>
                   </div>
 
@@ -160,27 +161,31 @@ document.addEventListener('touchmove',update)
           <svg stroke="currentColor" fill="currentColor" strokeWidth="1" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
           </div>
           </div>
-          <a className="text-white hover:text-teal-300 focus-visible:text-teal-300" href="https://github.com/AbbaAdam1/HarmonyHub" target="_blank" rel="noreferrer"><span className="sr-only">GitHub</span><svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-          </div>
-          <p className="font-normal text-sm text-gray-700 py-5 dark:text-gray-400">Developed an app that displays albums using Spotify API, and allows playing audio clips from each album using an audio player I built in JavaScript.</p>
-          <ul class="flex flex-wrap">
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div>
+      <button className="text-white hover:text-teal-300 focus-visible:text-teal-300" onClick={() => window.open("https://github.com/AbbaAdam1/HarmonyHub", "_blank")} rel="noreferrer">
+        <span className="sr-only">GitHub</span>
+        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </button>          </div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">Developed an app that displays albums using Spotify API, and allows playing audio clips from each album using an audio player I built in JavaScript.</p>
+          <ul className="flex flex-wrap">
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js </div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js </div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind CSS</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind CSS</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">REST API</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">REST API</div>
             </li>
           </ul>
         </div>
@@ -196,33 +201,38 @@ document.addEventListener('touchmove',update)
           <svg stroke="currentColor" fill="currentColor" strokeWidth="1" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
           </div>
           </div>
-          <a className="text-white hover:text-teal-300 focus-visible:text-teal-300" href="https://github.com/AbbaAdam1/pokemon-box/" target="_blank" rel="noreferrer"><span className="sr-only">GitHub</span><svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-          </div>
-          <p className="font-normal text-sm text-gray-700 py-5 dark:text-gray-400">Developed a Pokemon database website where users can create an account and log-in to store, read, and delete Pokemon data.</p>
-          <ul class="flex flex-wrap">
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">JavaScript</div>
+      <button className="text-white hover:text-teal-300 focus-visible:text-teal-300" onClick={() => window.open("https://github.com/AbbaAdam1/pokemon-box/", "_blank")} rel="noreferrer">
+        <span className="sr-only">GitHub</span>
+        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </button>
+                </div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">Developed a Pokemon database website where users can create an account and log-in to store, read, and delete Pokemon data.</p>
+          <ul className="flex flex-wrap">
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">JavaScript</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React.js</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js </div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js </div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PostgreSQL</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PostgreSQL</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Supabase Authentication</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Supabase Authentication</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind CSS</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind CSS</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div>
             </li>
-            <li class="mr-1.5 mt-2">
-              <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">REST API</div>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">REST API</div>
             </li>
           </ul>
         </div>

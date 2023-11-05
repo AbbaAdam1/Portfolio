@@ -32,7 +32,7 @@ block {
 }
 
 .float:hover {
-  background-color: rgba(22, 36, 62, 0.5);
+  background-color: rgba(22, 36, 62, 0.7);
   border-color: #333;
   color: #4FD1C5;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
