@@ -17,10 +17,10 @@ document.addEventListener('touchmove',update)
     <div className="lg:flex md:p-16 lg:p-24">
       <div className="lg:fixed">
         <h1 className="text-4xl lg:text-5xl font-bold">Mahamadou Adam</h1>
-        <h2 className="pt-3 text-xl font-bold">Full-Stack Engineer</h2>
-        <p className="pt-5 md:pb-10 text-gray-400">I be building stuff, ya feel?</p>
+        <h2 className="pl-1 pt-3 text-xl font-bold">Full-Stack Engineer</h2>
+        <p className="wrapper pl-1 pt-5 md:pb-10 text-slate-400">Passionate about creating interactive and user-friendly web applications.</p>
         <nav className="nav hidden lg:block">
-          <ul className="mt-16">
+          <ul className="mt-8">
             <li>
               <a className="group flex items-center py-3 active" href="#about">
                 <span className="nav-indicator mr-4 h-px transition-all bg-slate-600 w-8 group-hover:bg-slate-200 group-hover:w-16 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -69,7 +69,7 @@ document.addEventListener('touchmove',update)
       <section id="about">
       <h1 className="text-4xl">About</h1>
 
-        <p className="text-slate-400 pl-6 md:pl-6 pt-8">Hello! I'm Mahamadou Adam, a dedicated Full-Stack Engineer with 1+ years of experience. Skilled in JavaScript, TypeScript, Next.js, and React.js, I bring designs to life with beautiful and responsive user interfaces. I'm committed to professionalism, reliability, and exceeding client expectations.</p>
+        <p className="text-slate-400 pl-6 md:pl-6 pt-8">Hello! I'm Mahamadou Adam, a dedicated Full-Stack Developer with 1+ years of experience. Skilled in technologies such as JavaScript, TypeScript, and React.js, I bring designs to life with beautiful and responsive user interfaces. I'm committed to professionalism, reliability, and exceeding client expectations.</p>
 </section>
 
         <section id="experience" className="pt-20">
