@@ -94,7 +94,7 @@ const Experience = () => {
         <div className="flex items-center pl-7 pt-5">
           <a
             className="inline-flex items-center pr-1 leading-tight font-medium text-slate-200 group border-b border-transparent pb-px transition hover:border-teal-300"
-            href="https://pokemon-box-nine.vercel.app/"
+            href="https://docs.google.com/document/d/1iJsiBtwnhp5AVAhobT01_PZXR6rhdS_IEeYCB3W8YuM/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
