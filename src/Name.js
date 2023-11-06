@@ -11,7 +11,7 @@ const Name = () => {
         applications.
       </p>
       <nav className="nav hidden lg:block">
-        <ul className="mt-8">
+        <ul className="mt-8 lg:mt-12">
           <li>
             <a className="group flex items-center py-3 active" href="#about">
               <span className="nav-indicator mr-4 h-px transition-all bg-slate-600 w-8 group-hover:bg-slate-200 group-hover:w-16 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
