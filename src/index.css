@@ -20,8 +20,8 @@ block {
 }
 
 .wrapper {
-  width: 400px; /* Set a specific width where you want text to wrap */
-  word-wrap: break-word; /* This allows the text to wrap within the specified width */
+  width: 400px;
+  word-wrap: break-word;
 }
 
 .float {
@@ -38,11 +38,11 @@ block {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Flashlight Overlay */
 :root {
   --cursorX: 50vw;
   --cursorY: 50vh;
 }
+
 :root:before {
   content: '';
   display: block;
@@ -58,30 +58,19 @@ block {
   );
 }
 
-
-.mouse-circle {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
 .float svg:first-child {
   transition: transform 0.2s ease;
 }
 
-/* Define initial and hover positions using transform */
 .float:hover svg:first-child {
   transform: translate(6px, -6px);
 }
 
-.floaty svg {
+.Rfloat svg {
   transition: transform 0.2s ease;
 }
 
-/* Define initial and hover positions using transform */
-.floaty:hover svg {
+.Rfloat:hover svg {
   transform: translate(6px, -6px);
 }
 
@@ -122,7 +111,6 @@ block {
   opacity: 1;
 
 }
-
 
 @media screen and (max-width: 600px) {
   body {
