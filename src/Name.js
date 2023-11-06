@@ -3,10 +3,10 @@ import "./index.css";
 
 const Name = () => {
   return (
-    <div className="lg:fixed">
+    <div className="lg:fixed pl-10 pt-10 lg:pt-0 lg:pl-0">
       <h1 className="text-4xl lg:text-5xl font-bold">Mahamadou Adam</h1>
       <h2 className="pl-1 pt-3 text-xl font-bold">Full-Stack Engineer</h2>
-      <p className="wrapper pl-1 pt-5 md:pb-10 text-slate-400">
+      <p className="wrapper pl-1 pt-5 text-slate-400">
         Passionate about creating interactive and user-friendly web
         applications.
       </p>
@@ -42,7 +42,7 @@ const Name = () => {
         </ul>
       </nav>
 
-      <ul className="flex items-center text-slate-500 lg:fixed lg:bottom-0 lg:left-70 ml-1 mb-24 sm:mt-5">
+      <ul className="flex items-center text-slate-500 ml-1 mb-24 mt-5 lg:fixed lg:bottom-0">
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-teal-400"
