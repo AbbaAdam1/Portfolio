@@ -10,6 +10,7 @@ const Projects = () => {
           href="https://pokemon-box-nine.vercel.app/"
           target="_blank"
           rel="noreferrer"
+          className="group"
         >
           <div className="float">
             <img
@@ -37,32 +38,31 @@ const Projects = () => {
                   </svg>
                 </div>
               </div>
-              <button
-                className="text-white hover:text-teal-300 focus-visible:text-teal-300"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/AbbaAdam1/pokemon-box/",
-                    "_blank",
-                  )
-                }
+              <a
+                href="https://github.com/AbbaAdam1/pokemon-box/"
+                target="_blank"
                 rel="noreferrer"
               >
-                <span className="sr-only">GitHub</span>
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  className="text-white hover:text-teal-300 focus-visible:text-teal-300"
                 >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-              </button>
+                  <span className="sr-only">GitHub</span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-6 w-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </button>
+              </a>{" "}
             </div>
             <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
               Developed a Pokemon database website where users can create an
@@ -113,12 +113,13 @@ const Projects = () => {
           </div>
         </a>
 
+
         <a
           href="https://harmony-hub-zeta.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
-          <div className="float">
+          <div className="float group">
             <img
               src="harmony-hub.png"
               alt="Harmony Hub"
@@ -144,32 +145,31 @@ const Projects = () => {
                   </svg>
                 </div>
               </div>
-              <button
-                className="text-white hover:text-teal-300 focus-visible:text-teal-300"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/AbbaAdam1/HarmonyHub",
-                    "_blank",
-                  )
-                }
+              <a
+                href="https://github.com/AbbaAdam1/HarmonyHub"
+                target="_blank"
                 rel="noreferrer"
               >
-                <span className="sr-only">GitHub</span>
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  className="text-white hover:text-teal-300 focus-visible:text-teal-300"
                 >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-              </button>{" "}
+                  <span className="sr-only">GitHub</span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-6 w-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </button>
+              </a>{" "}
             </div>
             <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
               Developed an app that displays albums using Spotify API, and
@@ -211,6 +211,7 @@ const Projects = () => {
           </div>
         </a>
 
+
         <a
           href="https://portfolio-abbaadam1.vercel.app/"
           target="_blank"
@@ -242,15 +243,12 @@ const Projects = () => {
                   </svg>
                 </div>
               </div>
-              <button
-                className="text-white hover:text-teal-300 focus-visible:text-teal-300"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/AbbaAdam1/Portfolio",
-                    "_blank",
-                  )
-                }
+              <a
+                href="https://github.com/AbbaAdam1/Portfolio"
+                target="_blank"
                 rel="noreferrer"
+                className="text-white hover:text-teal-300 focus-visible:text-teal-300"
+                onClick={(e) => e.stopPropagation()}
               >
                 <span className="sr-only">GitHub</span>
                 <svg
@@ -260,19 +258,18 @@ const Projects = () => {
                   viewBox="0 0 24 24"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="h-6 w-6"
+                  className="h-6 w-6 github-icon"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                 </svg>
-              </button>{" "}
+              </a>{" "}
             </div>
             <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-              Crafted a portfolio page to highlight my experience and also
-              demonstrate my design proficiency through its layout and
-              presentation.{" "}
+              Crafted a portfolio page to highlight my experience and also demonstrate
+              my design proficiency through its layout and presentation.{" "}
             </p>
             <ul className="flex flex-wrap">
               <li className="mr-1.5 mt-2">
@@ -293,6 +290,7 @@ const Projects = () => {
             </ul>
           </div>
         </a>
+
       </div>
     </section>
   );
