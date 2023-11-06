@@ -24,7 +24,7 @@ function App() {
     <div className="lg:flex md:p-16 lg:p-24">
       <Name />
 
-      <div className="lg:w-1/2 lg:ml-auto ml-5 md:pl-8 mt-1">
+      <div className="lg:w-1/2 lg:ml-auto ml-3 md:pl-8 mt-1">
         <About />
 
         <Experience />
