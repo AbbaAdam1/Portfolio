@@ -24,6 +24,12 @@ block {
   word-wrap: break-word;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 .float {
   max-width: 70rem;
   padding: 1.5rem;
