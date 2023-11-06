@@ -13,6 +13,7 @@ function App() {
     if (x !== undefined && y !== undefined) {
       document.documentElement.style.setProperty("--cursorX", x + "px");
       document.documentElement.style.setProperty("--cursorY", y + "px");
+      document.documentElement.style.setProperty("--flashlightOpacity", "1");
     }
   }
 

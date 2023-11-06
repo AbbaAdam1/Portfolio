@@ -50,6 +50,7 @@ block {
   height: 100%;
   position: fixed;
   pointer-events: none;
+  opacity: var(--flashlightOpacity, 0);
   background: radial-gradient(
     circle 30vmax at var(--cursorX) var(--cursorY),
         rgba(58, 97, 250, 0.2) 0%, /* More blue */
