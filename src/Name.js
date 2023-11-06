@@ -3,7 +3,7 @@ import "./index.css";
 
 const Name = () => {
   return (
-    <div className="lg:fixed pl-10 pt-10 lg:pt-0 lg:pl-0">
+    <div className="lg:fixed pl-5 pt-5 lg:pt-0 lg:pl-0">
       <h1 className="text-4xl lg:text-5xl font-bold">Mahamadou Adam</h1>
       <h2 className="pl-1 pt-3 text-xl font-bold">Full-Stack Engineer</h2>
       <p className="wrapper pl-1 pt-5 text-slate-400">
