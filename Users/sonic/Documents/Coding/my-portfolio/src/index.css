@@ -51,7 +51,7 @@ block {
   position: fixed;
   pointer-events: none;
   background: radial-gradient(
-    circle 30vmax at var(--cursorX) var(--cursorY),
+    circle 50vmax at var(--cursorX) var(--cursorY),
         rgba(58, 97, 250, 0.2) 0%, /* More blue */
         rgba(58, 97, 250, 0) 80%, /* Original color */
         rgba(58, 97, 250, 0) 100%
