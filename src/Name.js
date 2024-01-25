@@ -5,7 +5,7 @@ const Name = () => {
   return (
     <div className="lg:fixed pl-3 pt-5 lg:pt-0 lg:pl-0">
       <h1 className="text-4xl lg:text-5xl font-bold">Mahamadou Adam</h1>
-      <h2 className="pl-1 pt-3 text-xl font-bold">Full-Stack Developer</h2>
+      <h2 className="pl-1 pt-3 text-xl font-bold">Software Engineer</h2>
       <p className="wrapper pl-1 pt-5 text-slate-400">
         Passionate about creating interactive and user-friendly web
         applications.
