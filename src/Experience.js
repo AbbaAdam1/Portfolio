@@ -9,11 +9,11 @@ const Experience = () => {
       <div id="dim">
         <div className="float">
           <div className="flex items-center justify-between">
-            <div>Full-Stack Developer</div>
+            <div>Jr. AWS Engineer</div>
             <div className="text-sm text-slate-500">2022-2023</div>
           </div>
           <div className="text-slate-500">
-            Fannie Mae (Contracted by GenSpark)
+            Fannie Mae (Contract)
           </div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
             Collaborated in an Agile environment to develop large-scale software
@@ -26,7 +26,7 @@ const Experience = () => {
 
         <div className="float">
           <div className="flex items-center justify-between">
-            <div>Full-Stack Developer</div>
+            <div>Full-Stack Developer Bootcamp</div>
             <div className="text-sm text-slate-500">2021-2022</div>
           </div>
           <div className="text-slate-500">GenSpark</div>
