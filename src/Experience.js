@@ -16,11 +16,12 @@ const Experience = () => {
             Fannie Mae (Contract)
           </div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Collaborated in an Agile environment to develop large-scale software
-            for Fannie Mae. Leveraged Cloud Computing and AWS for efficient,
-            secure Python development. Ensured high-quality data for
-            decision-making. Delivered key milestones on time, adhering to
-            project requirements in a Scrum setting.
+            <ul>
+              <li>● Automated core features in an ETL process using AWS, Python, and SQL</li>
+              <li>● Used Lambda functions to ingest data from Redshift to S3, handling 20% of project-wide data quality checks</li>
+              <li>● Established rigorous unit and integration testing for features, achieving over 80% code coverage</li>
+              <li>● Facilitated feature demonstrations and code reviews, providing and receiving constructive feedback</li>
+            </ul>
           </p>
         </div>
 
@@ -31,24 +32,27 @@ const Experience = () => {
           </div>
           <div className="text-slate-500">GenSpark</div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Designed, developed, and deployed web apps using industry-standard
-            practices. Demonstrated full-stack Java capability through team and
-            individual projects. Utilized front-end dev with JavaScript and
-            React. Built secure server-side apps with robust data handling.
-          </p>
+             <ul>
+               <li>● Completed a coding bootcamp, showcasing proficiency in designing and developing full stack applications</li>
+               <li>● Gained practical expertise by creating projects with Java, JavaScript, Spring, TypeScript, React.js, and SQL</li>
+               <li>● Solved coding problems focusing on object-oriented design, data structures, and algorithms</li>
+               <li>● Accomplished a curriculum that involved three projects, coding challenges, and four examinations</li>
+             </ul>
+           </p>
         </div>
 
         <div className="float">
           <div className="flex items-center justify-between">
-            <div>Web Application Developer Internship</div>
+            <div>Front-End Developer Internship</div>
             <div className="text-sm text-slate-500">2021</div>
           </div>
           <div className="text-slate-500">TDM Business Toole Suite</div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Collaborated with a team to develop the user interface of a web
-            application with HTML, CSS, Java, and JavaScript. Created visually
-            appealing interfaces that enhanced user engagement and facilitated
-            seamless navigation.
+            <ul>
+              <li>● Implemented enhancements for a business's web application using JavaScript and React</li>
+              <li>● Conducted rigorous testing to fix browser defects, ensuring compatibility across all major browsers</li>
+              <li>● Converted CSS to Styled-Components, eliminating visual defects and improving maintainability</li>
+            </ul>
           </p>
         </div>
 
@@ -89,6 +93,16 @@ const Experience = () => {
           <div className="text-slate-500">Purdue School of Science, IUPUI</div>
         </div>
       </div>
+
+        <div className="float">
+          <div className="text-xl pb-10">Certifications:</div>
+          <div className="flex items-center justify-between">
+            <div className="text-xl text-white">
+              AWS Certified Solutions Architect - Associate
+            </div>
+            <div className="text-sm text-slate-500">2024</div>
+          </div>
+        </div>
 
       <div className="Rfloat">
         <div className="flex items-center pl-7 pt-5">
