@@ -176,6 +176,9 @@ const Projects = () => {
               allows playing audio clips from each album using an audio player I
               built in JavaScript.
             </p>
+            <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+                (Audio player feature currently non-functional due to Spotify revoking access to audio URLs.)
+            </p>
             <ul className="flex flex-wrap">
               <li className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
