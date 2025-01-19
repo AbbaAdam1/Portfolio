@@ -172,12 +172,9 @@ const Projects = () => {
               </a>{" "}
             </div>
             <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-              Developed an app that displays albums using Spotify API, and
+              Developed an app that displays albums using Deezer API, and
               allows playing audio clips from each album using an audio player I
               built in JavaScript.
-            </p>
-            <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-                (Audio player feature currently non-functional due to Spotify revoking access to audio URLs.)
             </p>
             <ul className="flex flex-wrap">
               <li className="mr-1.5 mt-2">
