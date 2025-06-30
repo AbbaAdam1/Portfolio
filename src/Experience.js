@@ -9,36 +9,20 @@ const Experience = () => {
       <div id="dim">
         <div className="float">
           <div className="flex items-center justify-between">
-            <div>Jr. AWS Engineer</div>
-            <div className="text-sm text-slate-500">2022-2023</div>
+            <div>Software Engineer</div>
+            <div className="text-sm text-slate-500">2021-2023</div>
           </div>
           <div className="text-slate-500">
-            Fannie Mae (Contract)
+            GenSpark (Fannie Mae Contract)
           </div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
             <ul>
-              <li>● Automated core features in an ETL process using AWS, Python, and SQL</li>
-              <li>● Used Lambda functions to ingest data from Redshift to S3, handling 20% of project-wide data quality checks</li>
-              <li>● Established rigorous unit and integration testing for features, achieving over 80% code coverage</li>
-              <li>● Facilitated feature demonstrations and code reviews, providing and receiving constructive feedback</li>
+              <li>● Developed full-stack applications using Java, JavaScript, TypeScript, React.js, and SQL</li>
+              <li>● Built Lambda functions for Redshift to S3 data ingestion, handling 20% of project-wide data quality checks</li>
+              <li>● Achieved 80% code coverage through comprehensive testing and delivered constructive code reviews</li>
+              <li>● Quickly adapted to new frameworks, delivering stable software solutions across multiple projects</li>
             </ul>
           </p>
-        </div>
-
-        <div className="float">
-          <div className="flex items-center justify-between">
-            <div>Full-Stack Developer Bootcamp</div>
-            <div className="text-sm text-slate-500">2021-2022</div>
-          </div>
-          <div className="text-slate-500">GenSpark</div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-             <ul>
-               <li>● Completed a coding bootcamp, showcasing proficiency in designing and developing full stack applications</li>
-               <li>● Gained practical expertise by creating projects with Java, JavaScript, Spring, TypeScript, React.js, and SQL</li>
-               <li>● Solved coding problems focusing on object-oriented design, data structures, and algorithms</li>
-               <li>● Accomplished a curriculum that involved three projects, coding challenges, and four examinations</li>
-             </ul>
-           </p>
         </div>
 
         <div className="float">
