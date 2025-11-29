@@ -18,6 +18,7 @@ const Experience = () => {
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
             <ul>
               <li>● Developed full-stack applications using Java, JavaScript, TypeScript, React.js, and SQL</li>
+              <li>● Automated ETL processes using AWS, Python, and SQL, transforming business requirements into production-quality code</li>
               <li>● Built Lambda functions for Redshift to S3 data ingestion, handling 20% of project-wide data quality checks</li>
               <li>● Achieved 80% code coverage through comprehensive testing and delivered constructive code reviews</li>
               <li>● Quickly adapted to new frameworks, delivering stable software solutions across multiple projects</li>
@@ -33,9 +34,8 @@ const Experience = () => {
           <div className="text-slate-500">TDM Business Toole Suite</div>
           <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
             <ul>
-              <li>● Implemented enhancements for a business's web application using JavaScript and React</li>
-              <li>● Conducted rigorous testing to fix browser defects, ensuring compatibility across all major browsers</li>
-              <li>● Converted CSS to Styled-Components, eliminating visual defects and improving maintainability</li>
+              <li>● Enhanced web applications using JavaScript and React, improving user experience and workflows</li>
+              <li>● Conducted cross-browser testing and converted CSS to Styled-Components for improved maintainability</li>
             </ul>
           </p>
         </div>
@@ -92,7 +92,7 @@ const Experience = () => {
         <div className="flex items-center pl-7 pt-5">
           <a
             className="inline-flex items-center pr-1 leading-tight font-medium text-slate-200 group border-b border-transparent pb-px transition hover:border-teal-300"
-            href="https://docs.google.com/document/d/1iJsiBtwnhp5AVAhobT01_PZXR6rhdS_IEeYCB3W8YuM/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1oWPxVTdAF16dtbIQt5Yz9VGc-S4R8cX68QiKadC5cOo"
             target="_blank"
             rel="noreferrer"
           >
