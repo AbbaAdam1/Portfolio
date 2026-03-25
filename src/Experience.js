@@ -15,15 +15,14 @@ const Experience = () => {
           <div className="text-slate-500">
             GenSpark (Fannie Mae Contract)
           </div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            <ul>
-              <li>● Developed full-stack applications using Java, JavaScript, TypeScript, React.js, and SQL</li>
-              <li>● Automated ETL processes using AWS, Python, and SQL, transforming business requirements into production-quality code</li>
-              <li>● Built Lambda functions for Redshift to S3 data ingestion, handling 20% of project-wide data quality checks</li>
-              <li>● Achieved 80% code coverage through comprehensive testing and delivered constructive code reviews</li>
-              <li>● Quickly adapted to new frameworks, delivering stable software solutions across multiple projects</li>
+          <div className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+            <ul className="list-disc space-y-2 pl-5">
+              <li>Developed full-stack applications using JavaScript, TypeScript, React.js, and SQL</li>
+              <li>Automated ETL processes using AWS, Python, and SQL, transforming business requirements into production-quality code</li>
+              <li>Built Lambda functions for Redshift to S3 data ingestion, handling 20% of project-wide data quality checks</li>
+              <li>Achieved 80% code coverage through comprehensive testing and delivered constructive code reviews</li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <div className="float">
@@ -32,12 +31,12 @@ const Experience = () => {
             <div className="text-sm text-slate-500">2021</div>
           </div>
           <div className="text-slate-500">TDM Business Toole Suite</div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            <ul>
-              <li>● Enhanced web applications using JavaScript and React, improving user experience and workflows</li>
-              <li>● Conducted cross-browser testing and converted CSS to Styled-Components for improved maintainability</li>
+          <div className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+            <ul className="list-disc space-y-2 pl-5">
+              <li>Enhanced web applications using JavaScript and React, improving user experience and workflows</li>
+              <li>Conducted cross-browser testing and converted CSS to Styled-Components for improved maintainability</li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <div className="float">
