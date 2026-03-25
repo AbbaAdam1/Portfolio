@@ -7,9 +7,9 @@ const Experience = () => {
       <h1 className="text-4xl">Experience</h1>
 
       <div id="dim">
-        <div className="float">
+        <div className="float group">
           <div className="flex items-center justify-between">
-            <div>Software Engineer</div>
+            <div className="transition-colors group-hover:text-teal-300">Software Engineer</div>
             <div className="text-sm text-slate-500">2021-2023</div>
           </div>
           <div className="text-slate-500">
@@ -25,9 +25,9 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="float">
+        <div className="float group">
           <div className="flex items-center justify-between">
-            <div>Front-End Developer Internship</div>
+            <div className="transition-colors group-hover:text-teal-300">Front-End Developer Internship</div>
             <div className="text-sm text-slate-500">2021</div>
           </div>
           <div className="text-slate-500">TDM Business Toole Suite</div>
@@ -39,8 +39,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="float">
-          <p className="pb-10 text-xl">Technologies:</p>
+        <div className="float group">
+          <p className="pb-10 text-xl transition-colors group-hover:text-teal-300">Technologies:</p>
           <div className="text-slate-400">
             <div className="sm:grid grid-cols-2 gap-4">
               <ul className="list-disc pl-5">
@@ -65,27 +65,27 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="float">
-          <div className="text-xl pb-10">Education:</div>
+        <div className="float group">
+          <div className="text-xl pb-10 transition-colors group-hover:text-teal-300">Education:</div>
           <div className="flex items-center justify-between">
-            <div className="text-xl text-white">
+            <div className="text-xl text-white transition-colors group-hover:text-teal-300">
               Bachelor of Arts in Computer Science
             </div>
             <div className="text-sm text-slate-500">2017-2021</div>
           </div>
           <div className="text-slate-500">Purdue School of Science, IUPUI</div>
         </div>
-      </div>
 
-        <div className="float">
-          <div className="text-xl pb-10">Certifications:</div>
+        <div className="float group">
+          <div className="text-xl pb-10 transition-colors group-hover:text-teal-300">Certifications:</div>
           <div className="flex items-center justify-between">
-            <div className="text-xl text-white">
+            <div className="text-xl text-white transition-colors group-hover:text-teal-300">
               AWS Certified Solutions Architect - Associate
             </div>
             <div className="text-sm text-slate-500">2024</div>
           </div>
         </div>
+      </div>
 
       <div className="Rfloat">
         <div className="flex items-center pl-7 pt-5">
