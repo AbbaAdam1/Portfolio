@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 
+const twitchTechs = ["Python", "AWS Lambda", "Amazon S3", "Amazon Athena", "AWS Glue", "AWS CDK", "GitHub Actions", "SQL"];
 const pokemonTechs = ["JavaScript", "React.js", "Next.js", "PostgreSQL", "Supabase Authentication", "Tailwind CSS", "Node.js", "REST API"];
 const harmonyTechs = ["TypeScript", "React.js", "Next.js", "Tailwind CSS", "Node.js", "REST API"];
 const bikeTechs = ["Python", "pandas", "numpy", "matplotlib", "Seaborn"];
@@ -11,6 +12,63 @@ const Projects = () => {
     <section id="projects" className="pt-20">
       <h1 className="text-4xl pb-5">Projects</h1>
       <div id="dim">
+        <div className="float group">
+          <a
+            href="https://github.com/AbbaAdam1/twitch-trends"
+            target="_blank"
+            rel="noreferrer"
+            className="block"
+          >
+            <img
+              src="twitch-trends.png"
+              alt="Twitch Trends Pipeline"
+              className="border-2 border-slate-400/50"
+            />
+          </a>
+          <div className="sm:flex items-center justify-between pt-5">
+            <a
+              href="https://github.com/AbbaAdam1/twitch-trends"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
+              Twitch Trends Pipeline
+              <div className="pl-2 pt-2">
+                <svg stroke="currentColor" fill="currentColor" strokeWidth="1" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://github.com/AbbaAdam1/twitch-trends"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center text-white hover:text-teal-300 gap-x-2 focus-visible:text-teal-300"
+              aria-label="Twitch Trends Pipeline GitHub repository"
+            >
+              <span className="dark:text-slate-400">GitHub:</span>
+              <span className="sr-only">GitHub</span>
+              <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+          </div>
+          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+            Built a serverless AWS pipeline that measures how long a new game's launch hype lasts on Twitch.
+            It collects live stream data every 10 minutes, validates and compacts it into Parquet tables queried
+            with Athena, and is deployed through CDK and GitHub Actions for under $1 a month.
+          </p>
+          <ul className="flex flex-wrap">
+            {twitchTechs.map((tech) => (
+              <li key={tech} className="mr-1.5 mt-2">
+                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                  {tech}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="float group">
           <a
             href="https://pokemon-box-nine.vercel.app/"
