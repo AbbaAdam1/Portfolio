@@ -7,53 +7,40 @@ const Experience = () => {
       <h1 className="text-4xl">Experience</h1>
 
       <div id="dim">
-        <div className="float">
+        <div className="float group">
           <div className="flex items-center justify-between">
-            <div>Full-Stack Developer</div>
-            <div className="text-sm text-slate-500">2022-2023</div>
+            <div className="transition-colors group-hover:text-teal-300">Software Engineer</div>
+            <div className="text-sm text-slate-500">2021-2023</div>
           </div>
           <div className="text-slate-500">
-            Fannie Mae (Contracted by GenSpark)
+            GenSpark (Fannie Mae Contract)
           </div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Collaborated in an Agile environment to develop large-scale software
-            for Fannie Mae. Leveraged Cloud Computing and AWS for efficient,
-            secure Python development. Ensured high-quality data for
-            decision-making. Delivered key milestones on time, adhering to
-            project requirements in a Scrum setting.
-          </p>
+          <div className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+            <ul className="list-disc space-y-2 pl-5">
+              <li>Developed full-stack applications using JavaScript, TypeScript, React.js, and SQL</li>
+              <li>Automated ETL processes using AWS, Python, and SQL, transforming business requirements into production-quality code</li>
+              <li>Built Lambda functions for Redshift to S3 data ingestion, handling 20% of project-wide data quality checks</li>
+              <li>Achieved 80% code coverage through comprehensive testing and delivered constructive code reviews</li>
+            </ul>
+          </div>
         </div>
 
-        <div className="float">
+        <div className="float group">
           <div className="flex items-center justify-between">
-            <div>Full-Stack Developer</div>
-            <div className="text-sm text-slate-500">2021-2022</div>
-          </div>
-          <div className="text-slate-500">GenSpark</div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Designed, developed, and deployed web apps using industry-standard
-            practices. Demonstrated full-stack Java capability through team and
-            individual projects. Utilized front-end dev with JavaScript and
-            React. Built secure server-side apps with robust data handling.
-          </p>
-        </div>
-
-        <div className="float">
-          <div className="flex items-center justify-between">
-            <div>Web Application Developer Internship</div>
+            <div className="transition-colors group-hover:text-teal-300">Front-End Developer Internship</div>
             <div className="text-sm text-slate-500">2021</div>
           </div>
           <div className="text-slate-500">TDM Business Toole Suite</div>
-          <p className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
-            Collaborated with a team to develop the user interface of a web
-            application with HTML, CSS, Java, and JavaScript. Created visually
-            appealing interfaces that enhanced user engagement and facilitated
-            seamless navigation.
-          </p>
+          <div className="font-normal text-sm text-slate-700 py-5 dark:text-slate-400">
+            <ul className="list-disc space-y-2 pl-5">
+              <li>Enhanced web applications using JavaScript and React, improving user experience and workflows</li>
+              <li>Conducted cross-browser testing and converted CSS to Styled-Components for improved maintainability</li>
+            </ul>
+          </div>
         </div>
 
-        <div className="float">
-          <p className="pb-10 text-xl">Technologies:</p>
+        <div className="float group">
+          <p className="pb-10 text-xl transition-colors group-hover:text-teal-300">Technologies:</p>
           <div className="text-slate-400">
             <div className="sm:grid grid-cols-2 gap-4">
               <ul className="list-disc pl-5">
@@ -78,15 +65,25 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="float">
-          <div className="text-xl pb-10">Education:</div>
+        <div className="float group">
+          <div className="text-xl pb-10 transition-colors group-hover:text-teal-300">Education:</div>
           <div className="flex items-center justify-between">
-            <div className="text-xl text-white">
+            <div className="text-xl text-white transition-colors group-hover:text-teal-300">
               Bachelor of Arts in Computer Science
             </div>
             <div className="text-sm text-slate-500">2017-2021</div>
           </div>
           <div className="text-slate-500">Purdue School of Science, IUPUI</div>
+        </div>
+
+        <div className="float group">
+          <div className="text-xl pb-10 transition-colors group-hover:text-teal-300">Certifications:</div>
+          <div className="flex items-center justify-between">
+            <div className="text-xl text-white transition-colors group-hover:text-teal-300">
+              AWS Certified Solutions Architect - Associate
+            </div>
+            <div className="text-sm text-slate-500">2024</div>
+          </div>
         </div>
       </div>
 
@@ -94,7 +91,7 @@ const Experience = () => {
         <div className="flex items-center pl-7 pt-5">
           <a
             className="inline-flex items-center pr-1 leading-tight font-medium text-slate-200 group border-b border-transparent pb-px transition hover:border-teal-300"
-            href="https://docs.google.com/document/d/1iJsiBtwnhp5AVAhobT01_PZXR6rhdS_IEeYCB3W8YuM/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1oWPxVTdAF16dtbIQt5Yz9VGc-S4R8cX68QiKadC5cOo"
             target="_blank"
             rel="noreferrer"
           >

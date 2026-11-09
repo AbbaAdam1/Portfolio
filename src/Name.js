@@ -5,10 +5,9 @@ const Name = () => {
   return (
     <div className="lg:fixed pl-3 pt-5 lg:pt-0 lg:pl-0">
       <h1 className="text-4xl lg:text-5xl font-bold">Mahamadou Adam</h1>
-      <h2 className="pl-1 pt-3 text-xl font-bold">Full-Stack Developer</h2>
+      <h2 className="pl-1 pt-3 text-xl font-bold">Software Engineer</h2>
       <p className="wrapper pl-1 pt-5 text-slate-400">
-        Passionate about creating interactive and user-friendly web
-        applications.
+        Enthusiastic about solving problems through thoughtful engineering across web, data, and cloud systems.
       </p>
       <nav className="nav hidden lg:block">
         <ul className="mt-8 lg:mt-12">
@@ -56,7 +55,7 @@ const Name = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 16 16"
-              className="h-6 w-6"
+              className="h-9 w-9"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +77,7 @@ const Name = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 16 16"
-              className="h-6 w-6"
+              className="h-9 w-9"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
